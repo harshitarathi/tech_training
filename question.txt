@@ -1,0 +1,79 @@
+1. Which if the following is/are the levels of implementation of data structure
+A) Abstract level
+B) Application level
+C) Implementation level
+D) All of the above
+
+2. A binary search tree whose left subtree and right subtree differ in height by at most 1 unit is called ……
+A) AVL tree
+B) Red-black tree
+C) Lemma tree
+D) None of the above
+
+3. ……………….. level is where the model becomes compatible executable code
+A) Abstract level
+B) Application level
+C) Implementation level
+D) All of the above
+
+
+4. Which of the following is true about the characteristics of abstract data types?
+i) It exports a type.
+ii) It exports a set of operations
+A) True, False
+B) False, True
+C) True, True
+D) False, False
+
+
+5. Which of the following is not the part of ADT description?
+A) Data
+B) Operations
+C) Both of the above
+D) None of the above
+
+
+
+6. Which of the following data structure can’t store the non-homogeneous data elements?
+A) Arrays
+B) Records
+C) Pointers
+D) Stacks
+
+7. Identify the data structure which allows deletions at both ends of the list but insertion at only one end.
+A) Input restricted dequeue
+B) Output restricted qequeue
+C) Priority queues
+D) Stack
+
+
+
+8. To represent hierarchical relationship between elements, Which data structure is suitable?
+A) Dequeue
+B) Priority
+C) Tree
+D) Graph
+
+9. Which statement we should ignore in structure programming
+A) WHILE-DO
+B) GO-TO
+C) IT-ELSE
+D) SWITCH
+
+10. Which sorting method is slowest
+A) Quick sort
+B) Heap sort
+C) Shell sort
+D) Bubble sort
+
+ANSWERS:
+1. D) All of the above
+2. A) AVL tree
+3. C) Implementation level
+4. C) True, True
+5. D) None of the above
+6. A) Arrays
+7. A) Input restricted dequeue
+8. C) Tree
+9. B)GO-TO
+10.D)Bubble sort
