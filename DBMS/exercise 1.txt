@@ -1,0 +1,14 @@
+1) select name from employee
+ where name like'____s';
+
+2) select count(dept) from employee
+ group by dept;
+
+3) select dept,min(salary) from employee
+   group by salary;
+
+4) select dept from employee
+   group by dept 
+   having max(salary)>60000;
+
+5)
