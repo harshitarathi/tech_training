@@ -323,6 +323,9 @@ at least one product issued
 
 
 18. Disp empid,name and count of categories of each emp having at least 2 categories
+	select employee_id,employee_name,count(item_category)
+    from item_master  natural join employee_issue_details natural join employee_master group by employee_id
+     having count(item_category)>2;
 
 19. Display name of categories and no of items in each category and sort in order of
  no of items
@@ -332,4 +335,6 @@ at least one product issued
     -> order by (item_category) asc;
 
 20. Display empid,name with their total valuations.
-
+    select employee_id,sum(item_valuation)
+    from item_master  natural join employee_issue_details 
+    group by employee_id ;
