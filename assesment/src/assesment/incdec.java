@@ -6,7 +6,7 @@ public class incdec {
     int a=7;
     int b=a++ - ++a - a++ + ++a -a--;
     System.out.println(b);
-    int c=--a + a-- + ++a + a-- -++a ;
+    int c=--a + a-- + ++a + a-- - ++a ;
     System.out.println(c);
 
 	}
