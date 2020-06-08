@@ -1,0 +1,21 @@
+    1  ls
+    2  cat>test.js
+    3  cat content.txt
+    4  head
+    5  XXXX
+    6  cat abc.txt
+    7  cat>abc.txt
+    8  cat abc.txt
+    9  cat content.txt
+   10  ls -l
+   11  chmod 777 content.txt
+   12  cat content.txt
+   13  cat content.text
+   14  history
+   15  chmod 744 test.js
+   16  cat test.js
+   17  chmod 444 abc.txt
+   18  cat> test.js
+   19  cat>test.js
+   20  cat>abc.txt
+   21  history
