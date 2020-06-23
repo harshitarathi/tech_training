@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students SYSTEM "stustructure.dtd">
+
+<students>
+	<student>
+		<rollno>001</rollno>
+		<name>abc</name>
+		<enrollmentno>aasd1</enrollmentno>
+	</student>
+	
+	<student>
+		<rollno>002</rollno>
+		<name>def</name>
+		<enrollmentno>aas21</enrollmentno>
+	</student>
+	
+	<student>
+		<rollno>003</rollno>
+		<name>ghi</name>
+		<enrollmentno>adsd1</enrollmentno>
+	</student>
+</students>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- this is comment -->
+<!-- 
+rules : 1) every tag should have closing tag.
+        2) it is case sensitive
+        3)there should be one root tag
+		4)attribute value should be single or double quotes 
+ -->
+ 
+ <!DOCTYPE employees SYSTEM "empstructure.dtd">
+ <employees>
+	<employee empid="a1">
+		<id>1001</id>
+		<name>sachin</name>
+	</employee>
+	
+	<employee empid="a2">
+		<id>1002</id>
+		<name>ramesh</name>
+	</employee>
+	
+	<employee empid="a3">
+		<id>1003</id>
+		<name>shanu</name>
+	</employee>
+</employees>

@@ -1,0 +1,37 @@
+ <div class="modal fade" id="UserLoginModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"> 
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="formModalLabel">Login as User</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<!-- google -->
+						<div id="my-signin2" data-onsuccess="onSignIn"></div>
+ 				 <a href="#" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
+
+							<!-- <button class="btn btn-primary btn-lg btn-block">Login With Google</button> -->
+							<button class="btn btn-primary btn-lg btn-block">Login With Facebook</button>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

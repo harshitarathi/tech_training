@@ -1,0 +1,300 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "token": "21232f297a57a5a743894a0e4a801fc3"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "imgurl": "123",
+      "token": "21232f297a57a5a743894a0e4a801fc3"
+    }
+  ],
+  "airport": [
+    {
+      "id": 1,
+      "location": "Biju Patnaik International Airport,Bhubaneswar"
+    },
+    {
+      "id": 2,
+      "location": "Visakhapatnam Airport,Visakhapatnam"
+    },
+    {
+      "id": 3,
+      "location": "Jammu Civil Enclave,Jammu"
+    },
+    {
+      "id": 4,
+      "location": "Shimla Airport,Shimla"
+    },
+    {
+      "id": 5,
+      "location": "Chandigarh International Airport,Chandigarh"
+    },
+    {
+      "id": 6,
+      "location": "Behala Airport,Kolkata"
+    },
+    {
+      "id": 7,
+      "location": "Begumpet Airport,Hyderabad"
+    },
+    {
+      "id": 8,
+      "location": "Swami Vivekananda Airport,Raipur"
+    },
+    {
+      "id": 9,
+      "location": "Jharsuguda Airport,Jharsuguda"
+    },
+    {
+      "id": 10,
+      "location": "Raja Bhoj Airport,Bhopal"
+    },
+    {
+      "id": 11,
+      "location": "Begumpet Airport,Hyderabad"
+    },
+    {
+      "id": 12,
+      "location": "Devi Ahilya Bai Holkar Airport,Indore"
+    },
+    {
+      "id": 13,
+      "location": "Kota Airport,Kota"
+    },
+    {
+      "id": 14,
+      "location": "Rajmata Vijaya Raje Scindia Air Terminal,Gwalior"
+    },
+    {
+      "id": 15,
+      "location": "Vellore Airport,Vellore"
+    },
+    {
+      "id": 16,
+      "location": "Mysore Airport,Mysuru"
+    },
+    {
+      "id": 88,
+      "location": "hhh"
+    },
+    {
+      "id": "181",
+      "location": "xyz"
+    },
+    {
+      "id": "757",
+      "location": "kkk"
+    },
+    {
+      "id": "347",
+      "location": "delhi airport"
+    }
+  ],
+  "flight": [
+    {
+      "id": 1,
+      "from": "admin",
+      "to": "admin@gmail.com",
+      "name": "123",
+      "dept_time": "21232f297a57a5a743894a0e4a801fc3",
+      "arrv_time": "21232f297a57a5a743894a0e4a801fc3",
+      "economy_price": "233",
+      "business_price": "344"
+    },
+    {
+      "id": "744",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "437",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "741",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "name": "",
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "609",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "150",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "name": {},
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "83",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "name": {},
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "385",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "flight_name": {},
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "689",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "flight_name": {},
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "814",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "flight_name": "",
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "398",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "flight_name": "",
+      "depart_time": "02:03",
+      "arrival_time": "14:03",
+      "economy_price": "23",
+      "business_price": "23"
+    },
+    {
+      "id": "186",
+      "from": "Biju Patnaik International Airport,Bhubaneswar",
+      "to": "Biju Patnaik International Airport,Bhubaneswar",
+      "flight_name": "as",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "economy_price": "23",
+      "business_price": "32"
+    },
+    {
+      "id": "671",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "economy_price": "7000",
+      "business_price": "10000"
+    },
+    {
+      "id": "672",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "abc",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "economy_price": "8000",
+      "business_price": "90000"
+    }
+  ],
+  "reservation": [
+    {
+      "id": "671",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "price": "7000",
+      "dotravelling":"",
+      "status":"",
+      "name":"username"
+    },
+    {
+      "id": "552",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "price": "7000"
+    },
+    {
+      "id": "77",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "price": "7000"
+    },
+    {
+      "id": "523",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "price": "7000"
+    },
+    {
+      "id": "629",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "price": "7000"
+    },
+    {
+      "id": "228",
+      "from": "Chandigarh International Airport,Chandigarh",
+      "to": "Mysore Airport,Mysuru",
+      "flight_name": "xyz",
+      "depart_time": "02:02",
+      "arrival_time": "03:23",
+      "price": "7000"
+    }
+  ]
+}

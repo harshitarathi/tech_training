@@ -1,0 +1,34 @@
+<nav id="a" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id ="navbar-brand" class="navbar-brand" href="#" >Aero-Trek</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul  class="nav navbar-nav">
+        <li><a id ="nav-home" href="#" >Welcome to Flight Booking System</a></li>
+
+      </ul>
+      <ul  class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+       
+       <a href="LogOut.html" class="confirmation" style="color:#e6f6f7">Log out</a>
+     
+     	 <script type="text/javascript">
+    var elems = document.getElementsByClassName('confirmation');
+    var confirmIt = function (e) {
+        if (!confirm('Do you really want to Log Out ??')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+	</script>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>

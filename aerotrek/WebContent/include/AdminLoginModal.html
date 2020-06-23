@@ -1,0 +1,36 @@
+ <div class="modal fade" id="AdminLoginModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"> 
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="formModalLabel">Login as Admin</h4>
+			</div>
+			<div class="modal-body">
+				
+				
+					<div class="row">
+						<div class="form-group">
+                          <div class="col-md-12">
+							<label>Your email address *</label>
+							<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+                          </div>	
+						</div>
+					</div>
+                    <div class="row">
+						<div class="form-group">
+							<div class="col-md-12">
+	                            <label>Password *</label>
+	                            <input type="text" value="" data-msg-required="Please enter your Password." maxlength="100" class="form-control" name="password" id="password" required>
+							</div>		
+						</div>
+					</div>
+					<div  id = "admin" class="row" >
+						<div class="col-md-12">
+							<button onclick="adminLogin()" class="btn btn-primary btn-lg mb-xlg">Submit
+							</button>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>

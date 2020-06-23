@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentRule.xsd">
+  <name>name</name>
+  <age>0</age>
+  <dept>dept</dept>
+</empName>

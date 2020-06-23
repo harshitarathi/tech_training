@@ -1,0 +1,44 @@
+
+
+<nav id="a" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id ="navbar-brand" class="navbar-brand" href="index.html" >Aero-Trek</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul  class="nav navbar-nav">
+        <li><a id ="nav-home" href="index.html" >Home</a></li>
+
+      </ul>
+      <ul  class="nav navbar-nav navbar-right">
+        <li><a id ="nav-home" href="#" onclick="deleteAllCookie()"  id="logout">Logout</a></li>
+       <li class="dropdown" id="login">
+              
+        <a  id="dropdown-toggle" class="dropdown-toggle active"  data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in" ></span> Login
+        </a>
+        <ul class="dropdown-menu" >
+          <li data-toggle="modal" data-target="#UserLoginModal1"><a href="#">Login As User</a></li>
+          <li data-toggle="modal" data-target="#AdminLoginModal1"><a href="#">Login As Admin</a></li>
+       
+        </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+ console.log("header cookie"+readCookie("name"))
+ if(readCookie("name") !== null){
+      $("#login").hide();
+      $("#logout").show();
+  }else{
+    $("#logout").hide();
+    $("#login").show();
+      
+  }
+</script>

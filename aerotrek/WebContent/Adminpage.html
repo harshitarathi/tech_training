@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aero-trek</title>
+	<link rel="stylesheet" href="css/Admin page.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	
+</head>
+<body>
+
+<nav id="a" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id ="navbar-brand" class="navbar-brand" href="#" >Aero-Trek</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul  class="nav navbar-nav">
+        <li><a id ="nav-home" href="#" >Home</a></li>
+
+      </ul>
+      <ul  class="nav navbar-nav navbar-right">
+      	<li><a id ="nav-home" href="#" onclick="deleteAllCookies()" id="logout">Logout</a></li>
+       <li class="dropdown" id="login">
+              
+        <a  id="dropdown-toggle" class="dropdown-toggle active"  data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in" ></span> Login
+        </a>
+        <ul class="dropdown-menu" >
+          <li data-toggle="modal" data-target="#UserLoginModal1"><a href="#">Login As User</a></li>
+          <li data-toggle="modal" data-target="#AdminLoginModal1"><a href="#">Login As Admin</a></li>
+       
+        </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id= "main-div" class="container-fluid"  >
+	<div id ="row1" class="row" >
+			<div class="col-md-3" >
+				<button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#AddFlightModal1">Add Flights</button>
+			</div>
+			<div class="col-md-6" ></div>
+			<div class="col-md-3" >
+				
+			</div>
+		</div>
+		<div id ="row2" class="row" >
+			<div class="col-md-3" >
+			<button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#AddLocationModal1">Add Location</button>
+			</div>
+			<div class="col-md-6" ></div>
+			<div class="col-md-3" >
+				
+			</div>
+		</div>
+		<div id ="row3" class="row" >
+			<div class="col-md-3" >
+			<a href="showReservations.html";"><button class="btn btn-primary btn-lg btn-block">Show Reservations</button></a>
+			</div>
+			<div class="col-md-6" ></div>
+			<div class="col-md-3" >
+				
+			</div>
+		</div>
+</div>
+<div class="container-fluid">
+		<div class="row bg-primary">
+			<p align="center" >&copy;copyright</p>
+</div>	
+	
+	
+	<!--    User Login modal starts -->
+
+ <div class="modal fade" id="UserLoginModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"> 
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="formModalLabel">Login as User</h4>
+			</div>
+			<div class="modal-body">
+				
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<button class="btn btn-primary btn-lg btn-block">Login With Google</button>
+							<button class="btn btn-primary btn-lg btn-block">Login With Facebook</button>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--    User Login modal ends -->
+
+<!--    Admin Login modal start -->
+
+ <div class="modal fade" id="AdminLoginModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"> 
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="formModalLabel">Login as Admin</h4>
+			</div>
+			<div class="modal-body">
+				
+				<form id="contactForm" action="<?=BASE_URL?>CustomerLogin" method="POST">
+					<div class="row">
+						<div class="form-group">
+                        <div class="col-md-12">
+							<label>Your email address *</label>
+							<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+                                                    </div>
+							
+						</div>
+					</div>
+                                    <div class="row">
+						<div class="form-group">
+						<div class="col-md-12">
+						<label>Password *</label>
+                        <input type="text" value="" data-msg-required="Please enter your Password." maxlength="100" class="form-control" name="password" id="password" required>
+						</div>	
+							
+						</div>
+					</div>
+					
+                                    <div  id = "admin" class="row" >
+						<div class="col-md-12">
+							<input type="submit" value="submit" class="btn btn-primary btn-lg mb-xlg" data-loading-text="Loading...">
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--  Admin Login modal ends -->
+<!--  Add Flight modal start -->
+
+<div class="modal fade" id="AddFlightModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"> 
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="formModalLabel">Add Flight</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+						<div class="form-group">
+                           <div class="col-md-12">
+							<label>Flight Name</label>
+							<input id="flight_name" type="text" class="form-control" >
+                           </div>
+							
+						</div>
+					</div>
+				 <div class="row">
+						<div class="form-group">
+						<div class="col-md-12">
+                         	   <label>From :</label>
+                         	   <select id="from" class="form-control">
+
+								</select> 
+						</div>	
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+						<div class="col-md-12">
+                         	   <label>To :</label>
+                         	   <select id="to" class="form-control">
+
+								</select>   
+						</div>	
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+						<div class="col-md-12">
+                         	   <label>Departure time :</label>
+                         	   <input type="time" id="depart_time" class="form-control">
+						</div>	
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+						<div class="col-md-12">
+                         	   <label>Arrival time :</label>
+                         	   <input type="time" id="arrival_time" class="form-control">
+						</div>	
+							
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+						<div class="col-md-6">
+                         	   <label>Economy class price :</label>
+                         	   <input type="number" id="economy_price" class="form-control">
+						</div>	
+						<div class="col-md-6">
+                         	   <label>Business class price :</label>
+                         	   <input type="number" id="business_price" class="form-control">
+						</div>	
+							
+						</div>
+					</div>
+                                    <div  id = "admin" class="row" >
+						<div class="col-md-12">
+							<button class="btn btn-primary btn-lg mb-xlg" onclick="addFlight()">Add New Flight</button>
+							
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--  Add Flight modal start -->
+
+<div class="modal fade" id="AddLocationModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true"> 
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="formModalLabel">Add Location</h4>
+			</div>
+			<div class="modal-body">
+				
+				 <div class="row">
+						<div class="form-group">
+						<div class="col-md-12">
+                                                    <label>Location Name</label>
+                                                    <input type="text" value="" data-msg-required="Please enter Location to add." maxlength="100" class="form-control" id="location">
+						</div>	
+							
+						</div>
+					</div>
+					        
+					
+                                    <div  id = "admin" class="row" >
+						<div class="col-md-12">
+							<button onclick="addLocation()" class="btn btn-primary btn-lg mb-xlg">Add Location</button>
+						
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+</body>
+</html>
+
+

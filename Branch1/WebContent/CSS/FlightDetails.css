@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+ul{
+
+	float:left;
+}
+.form-group{
+ border: ridge;
+    inline-size: 77%;
+    text-align-last: center;
+    list-style:none;
+     
+   }
+   .form-inline{
+   text-align: center;
+ 
+  
+   }

@@ -17,7 +17,7 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
- --><Server port="8086" shutdown="SHUTDOWN">
+ --><Server port="9086" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -58,13 +58,13 @@
          Java HTTP Connector: /docs/config/http.html
          Java AJP  Connector: /docs/config/ajp.html
          APR (HTTP/AJP) Connector: /docs/apr.html
-         Define a non-SSL/TLS HTTP/1.1 Connector on port 80
+         Define a non-SSL/TLS HTTP/1.1 Connector on port 90
     -->
-    <Connector connectionTimeout="20000" port="80" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="90" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
-               port="80" protocol="HTTP/1.1"
+               port="90" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
     -->
@@ -104,8 +104,8 @@
     </Connector>
     -->
 
-    <!-- Define an AJP 1.3 Connector on port 8010 -->
-    <Connector port="8010" protocol="AJP/1.3" redirectPort="8443"/>
+    <!-- Define an AJP 1.3 Connector on port 9010 -->
+    <Connector port="9010" protocol="AJP/1.3" redirectPort="8443"/>
 
 
     <!-- An Engine represents the entry point (within Catalina) that processes
@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\first" path="/first" reloadable="true" source="org.eclipse.jst.jee.server:first"/></Host>
+      <Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\first" path="/first" reloadable="true" source="org.eclipse.jst.jee.server:first"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Git_Demo_Project" path="/Git_Demo_Project" reloadable="true" source="org.eclipse.jst.jee.server:Git_Demo_Project"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Techment_Http_WebDemo" path="/Techment_Http_WebDemo" reloadable="true" source="org.eclipse.jst.jee.server:Techment_Http_WebDemo"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Learning_Xml" path="/Learning_Xml" reloadable="true" source="org.eclipse.jst.jee.server:Learning_Xml"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JsonDemo" path="/JsonDemo" reloadable="true" source="org.eclipse.jst.jee.server:JsonDemo"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSONWebDemo" path="/JSONWebDemo" reloadable="true" source="org.eclipse.jst.jee.server:JSONWebDemo"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Soap_demo" path="/Soap_demo" reloadable="true" source="org.eclipse.jst.jee.server:Soap_demo"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Soapp" path="/Soapp" reloadable="true" source="org.eclipse.jst.jee.server:Soapp"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DemoRest4" path="/DemoRest4" reloadable="true" source="org.eclipse.jst.jee.server:DemoRest4"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\RestCrud" path="/RestCrud" reloadable="true" source="org.eclipse.jst.jee.server:RestCrud"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\DemoProject" path="/DemoProject" reloadable="true" source="org.eclipse.jst.jee.server:DemoProject"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Branch1" path="/Branch1" reloadable="true" source="org.eclipse.jst.jee.server:Branch1"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\day20" path="/day20" reloadable="true" source="org.eclipse.jst.jee.server:day20"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\aerotrek" path="/aerotrek" reloadable="true" source="org.eclipse.jst.jee.server:aerotrek"/><Context docBase="C:\Users\user\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Assesment4" path="/Assesment4" reloadable="true" source="org.eclipse.jst.jee.server:Assesment4"/></Host>
     </Engine>
   </Service>
 </Server>

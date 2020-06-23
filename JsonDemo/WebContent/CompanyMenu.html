@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>MENU............</h1>
+		<script type="text/javascript">
+		 document.write("<h2>WELCOME DRINK</h2>"+"<br>");
+
+var menu={
+		"welcomedrink":
+			[{"id":1,"name":"milk shake"},{"id":2,"name":"cold drink"},{"id":3,"name":"tea"}],
+			"maincourse":
+			[{"id":1,"name":"dal"},{"id":2,"name":"fried rice"},{"id":3,"name":"roti"}]
+		
+		 };
+		 
+				 
+		 for(var x in menu.welcomedrink)
+		 {
+			// document.write(x+"<br>");
+			 document.write(menu.welcomedrink[x].id+" "+menu.welcomedrink[x].name+"<br>");
+		 }
+		 document.write("<h2>MAIN COURSE</h2>"+"<br>");
+			
+		 for(var x in menu.maincourse)
+		 {
+			// document.write(x+"<br>");
+			 document.write(menu.maincourse[x].id+" "+menu.maincourse[x].name+"<br>");
+		 }
+
+		 </script> 
+</body>
+</html>

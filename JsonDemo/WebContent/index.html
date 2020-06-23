@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>this is p</p>
+
+<h1 id="x"></h1>
+
+<script type="text/javascript">
+document.write("<br>---json---</br>");
+var emp={
+		"employee":
+			[{"id":1,"name":"sachin"},{"id":2,"name":"ravi"}],
+			"companyname":"xyz pvt ltd"
+		
+		 };
+		 
+		 document.write(emp.employee[0].name+"<br>");
+		 
+		 for(var x in emp.employee)
+		 {
+			 document.write(x+"<br>");
+			 document.write(emp.employee[x].id+" "+emp.employee[x].name);
+		 }
+
+
+var name="sachin";
+var salary=5000;
+
+alert(name);
+document.write(name);
+console.log(name);
+document.getElementById('x').innerHTML=name;
+
+document.write("<br>--------type--------</br>");
+document.write(typeof(name)+"<br>");
+document.write(typeof(salary)+"<br>");
+
+document.write("<br>--------------array---------------</br>");
+
+var names=["ravi","kumar","mahi"];
+document.write(names.length+"<br>");
+document.write(names[0]+"<br>");
+
+for(var i=0;i<names.lentgh;i++)
+	{
+	document.write(names[1]+"<br>");
+	}
+
+</script>
+</body>
+</html>
