@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Restaurant</title>
+<link rel="stylesheet" href="css/login.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script>function showAlert(){
+	swal("Ordered food!");
+}</script>
+</head>
+<body style="background-image:url('images/image1.jpg');">
+
+<nav id="a" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id ="navbar-brand" class="navbar-brand"  >ABC Restaurant</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul  class="nav navbar-nav navbar-right">  
+        <a  id="dropdown-toggle" class="dropdown-toggle active"  data-toggle="dropdown" href="index.html"><span class="glyphicon glyphicon-log-in" ></span> Logout
+        </a>
+       
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="searchBack"  class="container-fluid">
+	<div class="container" >
+		<table border="1" class="table tablehover table-striped" id="table" >
+    <thead>
+      <tr>
+        <th><h2>Food</h2></th>
+        <th><h2>Price</h2></th>
+        <th><h2>Action</h2></th>
+      </tr>
+      <tr>
+        <th>Roti</th>
+        <th>8 rupee</th>
+         <th><button onclick="showAlert()">order</button></th>
+      </tr>
+      <tr>
+        <th>Tea</th>
+        <th>10 rupee</th>
+         <th><button onclick="showAlert()">order</button></th>
+      </tr>
+      <tr>
+        <th>Rice</th>
+        <th>50 rupee</th>
+         <th><button onclick="showAlert()">order</button></th>
+      </tr>
+      <tr>
+        <th>Dal</th>
+        <th>100 rupee</th>
+        <th><button onclick="showAlert()">order</button></th>
+      </tr>
+      <tr>
+        <th>Sweets</th>
+        <th>100 rupee</th>
+        <th><button onclick="showAlert()">order</button></th>
+      </tr>
+    </thead>
+  </table>
+	</div>
+		
+</div>
+<div class="container-fluid">
+	<div class="row bg-primary">
+			<p id="cpy" align="center" >&copy;copyright</p>
+	</div>
+</div>
+<div id="footer"></div>
+
+</body>
+</html>
